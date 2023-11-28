@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pawQ&A.css">
+    <title>Q&A</title>
+</head>
+<body>
+    <header>
+        <h2><a href="#" class="logo">Pawsome Care</a></h2>
+        <ul>
+            <li><a href="paw.html">Home</a></li>
+            <li><a href="pawMyPet.html">MyPet</a></li>
+            <li><a href="pawMyVet.html">MyVet</a></li>
+            <li><a href="pawQ&A.html" class="active">Q&A</a></li>
+            <li><a href="https://petstore.tn" target="_blank">Shop</a></li>
+            <li><a href="pawContact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Pet Profile</h1>
+        <form>
+            <h1>Please fill this form</h1>
+            <br/>
+            <section>
+                <lab><label for="pet-select">Select your pet:</label></lab>
+                <select id="pet-select">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                </select>
+                <br/><br/>
+
+                <lab><label for="pet-name">What is your pet's name?</label></lab>
+                <input type="text" id="pet-name" name="pet-name" required>
+                <br/><br/>
+
+                <lab><label for="pet-age">How old is your pet?</label></lab>
+                <input type="number" id="pet-age" name="pet-age" required> Months
+                <br/><br/>
+
+            
+                <lab><label>What is your pet's sex?</label><br/></lab>
+                <label><input type="radio" name="pet-sex" value="male">Male</label><br/>
+                <label><input type="radio" name="pet-sex" value="female">Female</label><br/>
+                <br/><br/>
+
+                <lab><label for="pet-breed">What is your pet's breed?</label></lab>
+                <input type="text" id="pet-breed" name="pet-breed" required>
+                <br/><br/>
+
+                <lab><label for="body-type">What is your dog's body type?</label></lab>
+                <select id="body-type" name="body-type">
+                    <option value="thin">Thin</option>
+                    <option value="ideal">Ideal</option>
+                    <option value="overweight">Overweight</option>
+                    <option value="obese">Obese</option>
+                </select>
+                <br/><br/>
+
+                <lab><label>What are your pet's symptoms?</label><br/></lab>
+                <label><input type="checkbox" name="pet-symptom" value="vomiting">Vomiting</label><br/>
+                <label><input type="checkbox" name="pet-symptom" value="diarrhea">Diarrhea</label><br/>
+                <label><input type="checkbox" name="pet-symptom" value="coughing">Coughing</label><br/>
+                <label><input type="checkbox" name="pet-symptom" value="sneezing">Sneezing</label><br/>
+                <label><input type="checkbox" name="pet-symptom" value="itching">Itching</label><br/>
+                <br/><br/>
+            </section>
+            <img src="vet.png" id="vet">
+
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="pawQ&A.js"></script>
+</body>
+</html>
